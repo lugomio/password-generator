@@ -1,4 +1,4 @@
-![[https://github.com/lugomio/password-generator/blob/master/assets/img/banner.png]]
+![Banner](./assets/img/banner.png)
 
 # Password Generator
 

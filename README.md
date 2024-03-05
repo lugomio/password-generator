@@ -18,7 +18,7 @@ Esse é um projeto desenvolvido para fins de aprendizado, onde você pode gerar 
 
 ## Acesso ao Projeto
 
-Você pode acessar o projeto ao vivo [clicando aqui](https://lugom.io/projects/password-manager/).
+Você pode acessar o projeto ao vivo [clicando aqui](https://lugom.io/projects/password-generator/).
 
 ## Design
 

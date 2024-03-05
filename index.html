@@ -9,17 +9,81 @@
     <meta name="description" content="Um gerador de senhas fortes feito para fins de aprendizado.">
     <meta name="og:title" content="Password Generator - lugom.io">
     <meta name="og:description" content="Um gerador de senhas fortes feito para fins de aprendizado.">
-    <meta name="og:image" content="">
+    <meta name="og:image" content="https://lugom.io/projects/password-generator/assets/img/banner.png">
     <link rel="shortcut icon" href="https://lugom.io/assets/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="flex justify-center align-center direction-column wrap px-4 py-4">
+    <div
+        class="container bg-black-40 border-radius-2 py-5 px-5 mb:py-4 mb:px-4 flex direction-column wrap justify-center align-center gap-2">
+        <header class="text-center color-white flex direction-column gap-1">
+            <h1 class="text-3 mb:text-3">Password Generator</h1>
+            <p class="max-w-600 mb:text-1">
+                Criar senhas complexas e seguras nunca foi tão fácil! Com nosso gerador de senhas, você pode
+                personalizar e obter senhas fortes para proteger suas contas online.
+            </p>
+        </header>
+        <main class="w-100 max-w-600 color-white flex direction-column gap-2 mt-3">
+            <section class="flex direction-row gap-0 wrap align-center">
+                <h2>Tamanho:</h2>
+                <div class="flex direction-row gap-0 nowrap align-center grow-1">
+                    <output id="tamanho-output" class="no-select">16</output>
+                    <input id="input-tamanho" class="grow-1 mb:w-100" type="range" name="tamanho" min="12" max="48" step="1"
+                        value="16">
+                </div>
+            </section>
+            <section class="flex direction-row gap-1 wrap align-center">
+                <h2>Caracteres:</h2>
+                <div class="flex direction-row gap-0 wrap align-center">
+                    <label for="digito-abc-upper" class="checkbox">
+                        <input id="digito-abc-upper" type="checkbox" name="digitos" value="upper" checked>
+                        <span class="checkmark no-select">&#10003;</span>
+                    </label>
+                    <label class="no-select pointer" for="digito-abc-upper">ABC</label>
+                </div>
+                <div class="flex direction-row gap-0 wrap align-center">
+                    <label for="digito-abc-lower" class="checkbox">
+                        <input id="digito-abc-lower" type="checkbox" name="digitos" value="lower" checked>
+                        <span class="checkmark no-select">&#10003;</span>
+                    </label>
+                    <label class="no-select pointer" for="digito-abc-lower">abc</label>
+                </div>
+                <div class="flex direction-row gap-0 wrap align-center">
+                    <label for="digito-numbers" class="checkbox">
+                        <input id="digito-numbers" type="checkbox" name="digitos" value="numbers" checked>
+                        <span class="checkmark no-select">&#10003;</span>
+                    </label>
+                    <label class="no-select pointer" for="digito-numbers">012</label>
+                </div>
+                <div class="flex direction-row gap-0 wrap align-center">
+                    <label for="digito-symbols" class="checkbox">
+                        <input id="digito-symbols" type="checkbox" name="digitos" value="symbols" checked>
+                        <span class="checkmark no-select">&#10003;</span>
+                    </label>
+                    <label class="no-select pointer" for="digito-symbols">@#$</label>
+                </div>
+            </section>
+            <section class="flex direction-row gap-0 wrap align-center py-1 relative">
+                <input id="input-senha" class="grow-1 text-black text-2 py-1 px-2 border-radius-2 mb:w-100 border-blue" type="text">
+                <span id="badge-senha" class="bg-green block py-1 px-2 border-radius-1 semibold no-select text-center">Muito Forte</span>
+                <button id="btn-copiar"
+                    class="pointer w-100p text-center py-2 px-3 bg-blue bg-blue:hover border-radius-2 transition-all color-white semibold">
+                    Copiar
+                </button>
+            </section>
+        </main>
+        <footer class="flex direction-row justify-center align-center mt-3">
+            <button id="btn-gerar"
+                class="pointer flex direction-row gap-0 nowrap justify-center align-center py-2 px-3 bg-red bg-red:hover border-radius-2 transition-all">
+                <img src="./assets/img/generate-icon.png" alt="regerar senha icone">
+                <span class="color-white text-2 semibold">Gerar</span>
+            </button>
+        </footer>
+    </div>
 
-
-
-    <script src="./js/script.js"></script>
-    <script id="fixedNavLugomJs" src="./js/fixedNavLugom.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script id="fixedNavLugomJs" src="/assets/js/fixedNavLugom.js"></script>
 </body>
 
 </html>
